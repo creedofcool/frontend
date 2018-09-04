@@ -129,7 +129,7 @@ export default {
       line-height: 26px;
       border: 1px solid #d8dce5;
       color: #495060;
-      background: #fff;
+      background: #ff0;
       padding: 0 8px;
       font-size: 12px;
       margin-left: 5px;
