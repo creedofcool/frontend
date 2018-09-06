@@ -61,6 +61,20 @@ export const constantRouterMap = [
       name: 'guide',
       meta: { title: 'guide', icon: 'guide', noCache: true }
     }]
+  },
+  {
+    path: '/test', // pom = purchase order management
+    component: Layout,
+    redirect: '/test/test1',
+    name: 'test',
+    meta: {
+      title: 'test',
+      icon: 'cart_1'
+    },
+    children: [
+      { path: 'test1', component: () => import('@/views/test/test1'), name: 'test1', meta: { title: 'test1' }},
+      { path: 'test2', component: () => import('@/views/test/test2'), name: 'test2', meta: { title: 'test2' }}
+    ]
   }
 ]
 
